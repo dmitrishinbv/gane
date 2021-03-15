@@ -1,0 +1,6 @@
+.idea
+.idea/*
+.git
+.htaccess
+wp-config.php
+/wp-content/cache
