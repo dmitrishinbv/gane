@@ -1,4 +1,7 @@
-<?php global $theme_options; ?>
+<?php
+global $theme_options;
+do_action('send_email');
+?>
 
 <section class="form__block d-flex">
     <div class="form__block__left" data-aos="fade up">
@@ -12,7 +15,7 @@
     </div>
 
     <div class="form__block__right" data-aos="fade up">
-        <form action="#" class="form d-flex flex-column">
+        <form method="post" class="form d-flex flex-column" name="contacts_message" id="contacts_message">
             <div class="field-wrap">
                 <label class="control-label" for="name">
                     <?php echo get_field('contact_form_texts') ['name_label']; ?>
